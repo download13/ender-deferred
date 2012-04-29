@@ -1,3 +1,3 @@
-function($) {
+(function($) {
 	$.ender(require('deferred'));
-}(ender);
+})(ender);

@@ -1,4 +1,4 @@
-function(context) {
+(function(context) {
 	function Deferred(general_error_handler) {
 		this.success_callbacks = [];
 		this.fail_callbacks = [];
@@ -106,4 +106,4 @@ function(context) {
 		return new Deferred();
 	}
 	context.when = when;
-}(this);
+})(this);
