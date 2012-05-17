@@ -1,8 +1,7 @@
 {
   "author": "download13",
   "name": "ender-deferred",
-  "description": "A simple Deferred engine for Ender (works with Node too)",
-  "version": "0.2.0",
-  "main": "./deferred.js",
-  "ender": "./ender.js"
+  "description": "A simple Deferred engine for Ender",
+  "version": "0.2.6",
+  "main": "./deferred.js"
 }

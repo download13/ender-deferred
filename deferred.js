@@ -1,4 +1,6 @@
 (function(context) {
+	var slice = Array.prototype.slice;
+	
 	function Deferred(general_error_handler) {
 		this.success_callbacks = [];
 		this.fail_callbacks = [];
@@ -6,6 +8,9 @@
 		this.results = null;
 		this.firing = false;
 		this.cancelled = false;
+		
+		this.resolve = this.resolve.bind(this);
+		this.reject = this.reject.bind(this);
 	}
 	Deferred.prototype = {
 		resolve: function() {
@@ -102,6 +107,8 @@
 		
 		return dfd;
 	}
+	
+	Deferred.when = when;
 	context.Deferred = function() {
 		return new Deferred();
 	}
